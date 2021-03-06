@@ -8,15 +8,20 @@
 
   <title>Registration Form</title>
   <style>
-  input[type=text],
+  input[type=text], input[type=email],
   select,
   textarea {
-    width: 100%;
+    width: 60%;
     padding: 12px;
     border: 1px solid #ccc;
+    
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+  }
+
+  .form{
+    align-items: center;
   }
 
   input[type=submit] {
@@ -26,7 +31,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    float: center;
   }
 
   .php {
@@ -39,16 +44,16 @@
 <body>
   <div class="form">
     <form method="post" action="">
-      <label for="email">Email address:</label>
-      <input type="email" name="email" id="">
-      <label for="email">Name:</label>
-      <input type="text" name="name" id="">
+      <label for="email">Email address:</label> 
+      <input type="email" name="email" id=""> <br>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id=""><br>
       <label for="gender">Gender:</label>
       <select name="gender" id="">
         <option value=""></option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
-      </select>
+      </select> <br>  
       <input type="submit" name="submit">
     </form>
   </div>
